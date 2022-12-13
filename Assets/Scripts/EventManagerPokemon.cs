@@ -28,12 +28,13 @@ public class EventManagerPokemon : MonoBehaviour
                 PokeballOpen.Play();
         }
 
-        if (timer >= 2)
+        if (timer >= 2.8f)
         {
             Pokemon.SetActive(true);
             Canvas.SetActive(true);
             if (PokemonShow.isPlaying == false)
                 PokemonShow.Play();
+            Destroy(PokemonShow, PokemonShow.clip.length);
         }
 
         if (timer >= 4)

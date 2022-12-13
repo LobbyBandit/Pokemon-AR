@@ -454,7 +454,7 @@ MonoBehaviour:
   Pokemon: {fileID: 1018995009}
   Canvas: {fileID: 1051449991}
   PokeballOpen: {fileID: 1652650973}
-  PokemonShow: {fileID: 0}
+  PokemonShow: {fileID: 1468667007}
 --- !u!1 &198792048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,7 +2055,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468667005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2073,9 +2073,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 54585ddf64eeb154b81f3008b2d11f4b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.52
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2203,7 +2203,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5346621b98287b84c8cf347c7cb0487e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.013
+  m_Volume: 0.032
   m_Pitch: 1
   Loop: 0
   Mute: 0
