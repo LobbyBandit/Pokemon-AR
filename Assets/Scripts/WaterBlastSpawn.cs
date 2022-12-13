@@ -20,7 +20,7 @@ public class WaterBlastSpawn : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-
+        
         if (timer >= 3 && gameObject.transform.localScale.x < 1)
             gameObject.transform.localScale += new Vector3(BlastSpeed,BlastSpeed,BlastSpeed) * Time.deltaTime;
         
@@ -33,4 +33,12 @@ public class WaterBlastSpawn : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    public void StopBlast()
+    {
+        gameObject.transform.localScale = new Vector3(0, 0, 0);
+        timer = 0;
+        gameObject.SetActive(false);
+    }
+
 }
