@@ -16,4 +16,12 @@ public class RotateToCamera : MonoBehaviour
         gameObject.transform.LookAt(NewLook);
 
     }
+
+    public void ResetRotation()
+    {
+
+        gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+
+    }
+
 }
