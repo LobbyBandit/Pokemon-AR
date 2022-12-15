@@ -5,8 +5,14 @@ using UnityEngine;
 public class RotateToCamera : MonoBehaviour
 {
 
-    public GameObject followObject;
+    GameObject followObject;
     Vector3 NewLook;
+
+    private void Start()
+    {
+        followObject = GameObject.Find("AR Camera");
+    }
+
     public void RotateToObject()
     {
         //gameObject.transform.LookAt(followObject.transform.position);
@@ -22,6 +28,11 @@ public class RotateToCamera : MonoBehaviour
 
         gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
 
+    }
+
+    public void doExitGame()
+    {
+        Application.Quit();
     }
 
 }
